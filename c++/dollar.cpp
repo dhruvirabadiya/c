@@ -4,7 +4,9 @@ using namespace std;
 
 int main(){
     int dollar=10;
-    int ruppes=82.32;
-    int dollar_in_ruppes = dollar * ruppes;
-    cout<<"$"<<dollar<<" is equal to "<<dollar_in_ruppes<<"  rupees";
+    float rupees=82.50;
+    int total;
+
+    total=dollar*rupees;
+    cout<<"total rupees is:"<<total;
 }
