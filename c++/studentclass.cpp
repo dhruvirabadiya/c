@@ -33,7 +33,7 @@ void Student::getdata(){
      cin>>sname;
      cout<<"enter marks of english:";
      cin>>eng;
-     cout<<"enter marks of matsh:";
+     cout<<"enter marks of maths:";
      cin>>maths;
      cout<<"enter marks of science:";
      cin>>science;
