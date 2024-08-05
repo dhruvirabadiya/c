@@ -38,7 +38,7 @@ void Book::input(){
     cin>>bno;
     cout<<"enter book title:";
     cin>>btitle;
-    cout<<"enter boom price:";
+    cout<<"enter book price:";
     cin>>price;
 };
 
