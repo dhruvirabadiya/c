@@ -3,6 +3,7 @@
 using namespace std;
 
 class Student{
+
     private:
     int admno;
     char sname[20];
@@ -10,24 +11,8 @@ class Student{
     float total;
 
     public:
-    void getdata();
-    void showdata(){
-        cout<<"admno:"<<admno<<endl;
-        cout<<"name:"<<sname<<endl;
-        cout<<"english:"<<eng<<endl;
-        cout<<"maths:"<<maths<<endl;
-        cout<<"science:"<<science<<endl;
-    }
-
-    void ctotal(){
-        total = eng + maths + science;
-        cout<<"total:"<<total<<endl;
-        
-    }
-};
-
-void Student::getdata(){
-     cout<<"enter admno:";
+    Student(){
+    cout<<"enter admno:";
      cin>>admno;
      cout<<"enter student name:";
      cin>>sname;
@@ -37,20 +22,34 @@ void Student::getdata(){
      cin>>maths;
      cout<<"enter marks of science:";
      cin>>science;
+    }
+
+    void showdata(){
+        cout<<"admno:"<<admno<<endl;
+        cout<<"name:"<<sname<<endl;
+        cout<<"english:"<<eng<<endl;
+        cout<<"maths:"<<maths<<endl;
+        cout<<"science:"<<science<<endl;
+    }
+
+    Student(int total){
+        total = eng + maths + science;
+        cout<<"total:"<<total<<endl;
+        
+    }
+
+    ~Student(){
+        cout<<"destructor is destroy:";
+    }
 };
 
 int main(){
-    class Student s1,s2,s3;
-    s1.getdata();
+     Student s1,s2;
+   
     s1.showdata();
     s1.ctotal();
-
-    s2.getdata();
+ 
     s2.showdata();
     s2.ctotal();
-
-    s3.getdata();
-    s3.showdata();
-    s3.ctotal();
     
 }

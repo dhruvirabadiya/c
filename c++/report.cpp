@@ -1,4 +1,4 @@
-#include<iostream>
+ #include<iostream>
 
 using namespace std;
 
@@ -7,23 +7,20 @@ class Report{
     private:
     int adno;
     char name[20];
-    int sub1,sub2,sub3,sub4,sub5;
-    
+    int sub1,sub2,sub3,sub4,sub5; 
     float marks;
     float avrage;
 
     public:
-   void  readinfo();
-   void displayinfo(){
+    void  readinfo();
+    void displayinfo(){
        cout<<"adno:"<<adno<<endl;
        cout<<"name:"<<name<<endl;
        cout<<"sub1:"<<sub1<<endl;
        cout<<"sub2:"<<sub2<<endl;
        cout<<"sub3:"<<sub3<<endl;
        cout<<"sub4:"<<sub4<<endl;
-       cout<<"sub5:"<<sub5<<endl;
-      
-     
+       cout<<"sub5:"<<sub5<<endl; 
 
    };
    void calculatemarks(){
