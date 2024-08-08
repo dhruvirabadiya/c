@@ -32,7 +32,7 @@ class Student{
         cout<<"science:"<<science<<endl;
     }
 
-    Student(int total){
+    void ctotal(){
         total = eng + maths + science;
         cout<<"total:"<<total<<endl;
         
