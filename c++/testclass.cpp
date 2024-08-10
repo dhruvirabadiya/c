@@ -16,7 +16,7 @@ class Test{
         cout<<"description:"<<description<<endl;
         cout<<"no of candidate:"<<nocandidate<<endl;
     };
-
+           
     void calcntr(){
         centerreqd=nocandidate/100+1;
         cout<<"center required:"<<centerreqd<<endl;
