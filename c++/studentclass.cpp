@@ -26,7 +26,7 @@ class Student{
     }
 };
 
-void Student::getdata(){
+    void Student::getdata(){
      cout<<"enter admno:";
      cin>>admno;
      cout<<"enter student name:";

@@ -7,7 +7,7 @@ class Test{
     int testcode;
     char description[50];
     int nocandidate;
-    int centerreqd;
+    int centerreqd; 
 
     public:
     void schedule();

@@ -13,19 +13,19 @@ class Shape{
       }
 
       Shape(int r,int h){
-           cylinder=pie*r*r*h;
+        cylinder=pie*r*r*h;
         cout<<"area of cylinder is:"<<cylinder<<endl;
 
       }
 
       Shape(int l,int b,int h){
-        cuboid=l*b*h;
+         cuboid=l*b*h;
          cout<<"area of cuboid is:"<<cuboid<<endl;
       }
 
       Shape(double b,double h){
         prism=b*h;
-      cout<<"area of prism is:"<<prism<<endl;
+        cout<<"area of prism is:"<<prism<<endl;
 
       }
 

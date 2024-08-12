@@ -4,7 +4,7 @@ using namespace std;
 
 class Demo{
 
-      public:
+    public:
     void test(){
         cout<<"default function call:"<<endl;
     }

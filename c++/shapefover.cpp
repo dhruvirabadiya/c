@@ -24,7 +24,7 @@ class Shape{
 
    void triangleshape(double base,double height){
      triangle=base*height/2;
-    cout<<"volume of triangle is:"<<triangle<<endl;
+     cout<<"volume of triangle is:"<<triangle<<endl;
     }
 
 
