@@ -32,6 +32,7 @@ int main() {
     class Largestnum n;
     
     n.getdata(3,15,8);
+    
     cout << "The largest number is: " << findlargest(n) << endl;
 
 }

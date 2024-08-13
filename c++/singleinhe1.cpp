@@ -3,12 +3,12 @@ using namespace std;
       
 class Student{
     private:
-    int admno;
-    char sname[20];
+     int admno;
+     char sname[20];
 
     public:
      float english,maths,science;
-      float total;
+     float total;
 
     void getdata(){
         cout<<"enter admno:";
@@ -40,11 +40,11 @@ class derivestud : public Student{
             total= english+maths+science;
             cout<<"total marks is:"<<total<<endl;
          }
-        void getdatastud(){
-              getdata();
-              showdata(); 
-              ctotal();
-        }
+         void getdatastud(){
+            getdata();
+            showdata(); 
+            ctotal();
+         }
       
 };
 
