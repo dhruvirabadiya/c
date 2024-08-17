@@ -32,7 +32,7 @@ void Bank::ac_Pin()
 
 void Bank::create_account()
 {
-    cout << "<----Create Your Account:----> \n";
+    cout << "<----Create Your Account:---->"<<endl;
 
     cout << "Enter Your Account Number:";
     cin >> ac_no;
@@ -56,7 +56,7 @@ void Bank::show_accountdetail()
 void Bank::Withdrwal()
 {
     int withdrwal_ammount;
-    cout << "----Withdrawal Amount---->";
+    cout << "----Withdrawal Amount---->"<<endl;
 
     int account_num;
     cout << "Enter Bank Account Number:";
@@ -70,7 +70,7 @@ void Bank::Withdrwal()
     }
     else
     {
-        cout << "Incorrect Account Number";
+        cout << "Incorrect Account Number"<<endl;
     }
 }
 
@@ -78,7 +78,7 @@ void Bank::Deposite()
 {
     int deposite_amount;
 
-    cout << "----Deposite Amount---->";
+    cout << "----Deposite Amount---->"<<endl;
     int account_num;
     cout << "Enter Bank Account Number:";
     cin >> account_num;
@@ -91,13 +91,13 @@ void Bank::Deposite()
     }
     else
     {
-        cout << "Incorrect Account Number";
+        cout << "Incorrect Account Number"<<endl;
     }
 }
 
 void Bank::Totalbalance()
 {
-    cout << "----Total Balance--->";
+    cout << "----Total Balance--->"<<endl;
     int account_num;
     cout << "Enter Your Account Number:";
     cin >> account_num;
@@ -107,7 +107,7 @@ void Bank::Totalbalance()
     }
     else
     {
-        cout << "Incorrect Account Number";
+        cout << "Incorrect Account Number"<<endl;
     }
 }
 
@@ -124,7 +124,7 @@ int main()
         cout << "3.Deposite Amount " << endl;
         cout << "4.Check Balance" << endl;
         cout << "0.Exit" << endl;
-        cout << "---->Enter Your Choice:<----";
+        cout << "---->Enter Your Choice:";
         cin >> choice;
 
         switch (choice)
