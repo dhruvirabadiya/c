@@ -19,6 +19,7 @@ public:
     void Deposite();
     void Totalbalance();
 };
+
 bool Bank::ac_Pin()
 {
     int bank_pin;
