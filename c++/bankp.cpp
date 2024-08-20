@@ -8,18 +8,18 @@ protected:
     int ac_no;
     string acholder_name;
     string ac_type;
-    int balance;
-    double total_amount;
+    int balance = 0;
+    // float total_amount;
 
 public:
-    void ac_Pin();
+    bool ac_Pin();
     void create_account();
     void show_accountdetail();
     void Withdrwal();
     void Deposite();
     void Totalbalance();
 };
-void Bank::ac_Pin()
+bool Bank::ac_Pin()
 {
     int bank_pin;
     cout << "Enter Your Pin Number:";
@@ -27,7 +27,9 @@ void Bank::ac_Pin()
     if (bank_pin != pin)
     {
         cout << "Pin Is Invalid Cant Access" << endl;
+        return false;
     }
+    return true;
 }
 
 void Bank::create_account()
@@ -65,8 +67,15 @@ void Bank::Withdrwal()
     {
         cout << "Enter The Amount You Want To Withdrwal:";
         cin >> withdrwal_ammount;
-        total_amount = withdrwal_ammount -= balance;
-        cout << "Amount Withdrwal Sucessfully" << endl;
+        if (withdrwal_ammount > balance)
+        {
+            cout << "Insufficient Balance" << endl;
+        }
+        else
+        {
+            balance -= withdrwal_ammount;
+            cout << "Amount Withdral Successfully" << endl;
+        }
     }
     else
     {
@@ -86,7 +95,7 @@ void Bank::Deposite()
     {
         cout << "Enter Amount You Want To Deposite:";
         cin >> deposite_amount;
-        total_amount = deposite_amount += balance;
+        balance = deposite_amount += balance;
         cout << "Amount Withdrwal Sucessfully" << endl;
     }
     else
@@ -103,7 +112,7 @@ void Bank::Totalbalance()
     cin >> account_num;
     if (account_num == ac_no)
     {
-        cout << "Total Amount In Your Account:" << total_amount << endl;
+        cout << "Total Amount In Your Account:" << balance << endl;
     }
     else
     {
@@ -114,9 +123,13 @@ void Bank::Totalbalance()
 int main()
 {
     Bank b1;
-    int choice;
-    b1.ac_Pin();
+
+    if (!b1.ac_Pin())
+    {
+        return 0;
+    }
     b1.create_account();
+    int choice;
     do
     {
         cout << "1.Show Bank Details " << endl;
@@ -124,7 +137,7 @@ int main()
         cout << "3.Deposite Amount " << endl;
         cout << "4.Check Balance" << endl;
         cout << "0.Exit" << endl;
-        cout << "---->Enter Your Choice:<----";
+        cout << "---->Enter Your Choice:";
         cin >> choice;
 
         switch (choice)
