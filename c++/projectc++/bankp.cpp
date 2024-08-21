@@ -35,7 +35,7 @@ bool Bank::ac_Pin()
 
 void Bank::create_account()
 {
-    cout << "<----Create Your Account:---->"<<endl;
+    cout << "<----Create Your Account:---->" << endl;
 
     cout << "Enter Your Account Number:";
     cin >> ac_no;
@@ -59,7 +59,7 @@ void Bank::show_accountdetail()
 void Bank::Withdrwal()
 {
     int withdrwal_ammount;
-    cout << "----Withdrawal Amount---->"<<endl;
+    cout << "----Withdrawal Amount---->" << endl;
 
     int account_num;
     cout << "Enter Bank Account Number:";
@@ -80,7 +80,7 @@ void Bank::Withdrwal()
     }
     else
     {
-        cout << "Incorrect Account Number"<<endl;
+        cout << "Incorrect Account Number" << endl;
     }
 }
 
@@ -88,7 +88,7 @@ void Bank::Deposite()
 {
     int deposite_amount;
 
-    cout << "----Deposite Amount---->"<<endl;
+    cout << "----Deposite Amount---->" << endl;
     int account_num;
     cout << "Enter Bank Account Number:";
     cin >> account_num;
@@ -101,13 +101,13 @@ void Bank::Deposite()
     }
     else
     {
-        cout << "Incorrect Account Number"<<endl;
+        cout << "Incorrect Account Number" << endl;
     }
 }
 
 void Bank::Totalbalance()
 {
-    cout << "----Total Balance--->"<<endl;
+    cout << "----Total Balance--->" << endl;
     int account_num;
     cout << "Enter Your Account Number:";
     cin >> account_num;
@@ -117,7 +117,7 @@ void Bank::Totalbalance()
     }
     else
     {
-        cout << "Incorrect Account Number"<<endl;
+        cout << "Incorrect Account Number" << endl;
     }
 }
 
