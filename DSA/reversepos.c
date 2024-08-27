@@ -1,22 +1,33 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int n;
-    int arr[n],temp=0;
+int main()
+{
+     int n;
 
-    printf("enter the value of n:");
-    scanf("%d",&n);
+     printf("Enter the value of n: ");
+     scanf("%d", &n);
 
-    for(int i=0;i<n;i++){
-         printf("enter the array element:");
-         scanf("%d",&arr[n]);
-    }
+     int arr[n]; // Declaring the array after reading n
 
-    for(int i=0;i<n;i++){
-         temp=arr[i];
-         arr[i]=arr[n-i-1];
-         arr[n-i-1]=temp;
-         printf("after swaping is: %d",arr[i]);
+     // Input array elements
+     for (int i = 0; i < n; i++)
+     {
+          printf("Enter the array element at index %d: ", i);
+          scanf("%d", &arr[i]);
+     }
 
-    }
+     // Swapping the first and last elements
+     int temp = arr[0];
+     arr[0] = arr[n - 1];
+     arr[n - 1] = temp;
+
+     // Printing the array after swapping
+     printf("Array after swapping: ");
+     for (int i = 0; i < n; i++)
+     {
+          printf("%d ", arr[i]);
+     }
+     printf("\n");
+
+     return 0;
 }
