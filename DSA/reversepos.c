@@ -1,16 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int n;
-    int arr[n],temp=0;
+int main()
+{
+     int n;
 
-    printf("enter the value of n:");
-    scanf("%d",&n);
+     printf("Enter the value of n: ");
+     scanf("%d", &n);
 
-    for(int i=0;i<n;i++){
-         printf("enter the array element:");
-         scanf("%d",&arr[n]);
-    }
+     int arr[n];
 
     for(int i=0;i<n/2;i++){
          temp=arr[i];
