@@ -1,18 +1,30 @@
-#include<stdio.h>
+#include <stdio.h>
 
-void reverse(){
-    int n,i,rev=0,rem;
-    printf("enter a number:");
-    scanf("%d",&n);
+int main()
+{
+     int n;
 
-    while(n!=0){
-        rem=n%10;
-        rev=rev*10+rem;
-        n/=10;
-    }
-    printf("reverse number is: %d",rev);
-}
+     printf("Enter the value of n: ");
+     scanf("%d", &n);
 
-int main(){
-       reverse();
+     int arr[n];
+
+     for (int i = 0; i < n; i++)
+     {
+          printf("Enter the array element at index %d: ", i);
+          scanf("%d", &arr[i]);
+     }
+
+     int temp = arr[0];
+     arr[0] = arr[n - 1];
+     arr[n - 1] = temp;
+
+     printf("Array after swapping: ");
+     for (int i = 0; i < n; i++)
+     {
+          printf("%d ", arr[i]);
+     }
+     printf("\n");
+
+     return 0;
 }
