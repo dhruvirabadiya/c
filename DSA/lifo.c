@@ -24,7 +24,7 @@ void first(int x){
            top++;
            stack[top]=x;
     }else{
-      for(int i = n-1; i >= 0; i--) {
+      for(int i= n-1; i >= 0; i--) {
             stack[i] = stack[i-1];
         }
         stack[0] = x;
