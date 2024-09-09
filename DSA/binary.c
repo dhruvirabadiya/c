@@ -41,7 +41,7 @@ int main()
     int arr[5] = {12, 15, 25, 50, 55};
     display(arr);
     printf("\n");
-    int result = search(arr, 0, 5 - 1, 0);
+    int result = search(arr, 0, 5 - 1, 50);
     if (result == -1)
     {
         printf("element not found");
