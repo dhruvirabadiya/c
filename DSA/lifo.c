@@ -4,7 +4,6 @@
 #define n 5
 
 int stack[n];
-
 int top=-1;
 //for add the element
 void push(int x){
