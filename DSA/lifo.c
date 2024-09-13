@@ -8,8 +8,7 @@ int top=-1;
 //for add the element
 void push(int x){
     if(top>=n-1){
-        printf("stack is empty");
-        
+        printf("stack is empty");    
     }else{
         top+=1;
         stack[top]=x;
