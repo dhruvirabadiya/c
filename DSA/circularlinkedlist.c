@@ -174,7 +174,7 @@ int main()
         }
         else if (n == 4)
         {
-            Delete_first();
+              Delete_first();
               printf("Node deleted begining\n");
         }
         else if (n == 5)
